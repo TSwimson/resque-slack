@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.authors     = ['Julien Blanchard']
   s.email       = ['julien@sideburns.eu']
   s.homepage    = 'https://www.github.com/julienXX/resque-slack'
-  s.summary     = %q{Post Slack notifications whenever one of your Resque jobs fails}
-  s.description = %q{Slack notifications for your failed jobs}
+  s.summary     = 'Post Slack notifications whenever one of your Resque jobs fails'
+  s.description = 'Slack notifications for your failed jobs'
 
   s.rubyforge_project = 'resque-slack'
   s.has_rdoc          = false
@@ -18,5 +18,6 @@ Gem::Specification.new do |s|
   s.require_paths     = ['lib']
 
   s.add_runtime_dependency('resque', '>= 1.8')
+  s.add_runtime_dependency('slack-ruby-client')
   s.add_development_dependency('rake')
 end
